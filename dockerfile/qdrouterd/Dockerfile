@@ -1,0 +1,21 @@
+FROM ppatierno/qpid-proton:0.12.1
+
+MAINTAINER Paolo Patierno <ppatierno@live.com>
+
+# set Qpid Dispatch Router version
+ENV DISPATCH_VERSION 0.5
+
+# downloading/extracting Qpid Dispatch Router
+RUN wget https://dist.apache.org/repos/dist/release/qpid/dispatch/$DISPATCH_VERSION/qpid-dispatch-$DISPATCH_VERSION.tar.gz
+RUN tar xvfz qpid-dispatch-$DISPATCH_VERSION.tar.gz
+
+# build Qpid Dispatch Router
+RUN mkdir /qpid-dispatch-$DISPATCH_VERSION/build
+WORKDIR /qpid-dispatch-$DISPATCH_VERSION/build
+
+RUN cmake .. -DCMAKE_INSTALL_PREFIX=/usr && make install
+
+EXPOSE 5672 5672
+
+WORKDIR /
+CMD ["qdrouterd"]
