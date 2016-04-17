@@ -3,7 +3,7 @@ FROM fedora:23
 MAINTAINER Paolo Patierno <ppatierno@live.com>
 
 # required dependencies
-RUN dnf -y install gcc make cmake libuuid-devel
+RUN dnf -y install gcc gcc-c++ make cmake libuuid-devel
 
 # dependencies needed for ssl support
 RUN dnf -y install openssl-devel
@@ -21,6 +21,10 @@ ENV PROTON_VERSION 0.12.1
 RUN dnf -y install wget
 RUN dnf -y install tar
 RUN wget http://apache.panu.it/qpid/proton/$PROTON_VERSION/qpid-proton-$PROTON_VERSION.tar.gz
+
+# following line is useful if you want to install Qpid Proton version before 0.9 (they are on Apache archive)
+#RUN wget http://archive.apache.org/dist/qpid/proton/$PROTON_VERSION/qpid-proton-$PROTON_VERSION.tar.gz
+
 RUN tar xvfz qpid-proton-$PROTON_VERSION.tar.gz
 
 # build Qpid Proton library
