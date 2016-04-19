@@ -9,7 +9,7 @@ RUN dnf -y install gcc gcc-c++ make cmake libuuid-devel
 RUN dnf -y install openssl-devel
 
 # dependencies needed for Cyrus SASL support
-RUN dnf -y install cyrus-sasl-devel
+RUN dnf -y install cyrus-sasl-devel cyrus-sasl-plain
 
 # dependencies needed for Python binding
 RUN dnf -y install swig python-devel
