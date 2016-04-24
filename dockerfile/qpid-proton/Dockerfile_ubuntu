@@ -1,0 +1,42 @@
+FROM ubuntu:latest
+
+MAINTAINER Paolo Patierno <ppatierno@live.com>
+
+# updating archives list
+RUN apt-get update
+
+# installing build essential
+RUN apt-get install -y build-essential
+
+# required dependencies
+RUN apt-get install -y gcc make cmake uuid-dev
+
+# dependencies needed for ssl support
+RUN apt-get install -y libssl-dev
+
+# dependencies needed for Cyrus SASL support
+RUN apt-get install -y libsasl2-2 libsasl2-dev
+
+# dependencies needed for Python binding
+RUN apt-get install -y swig python-dev
+
+# set Qpid Proton library version
+ENV PROTON_VERSION 0.12.1
+
+# downloading/extracting Qpid Proton library
+RUN apt-get install -y wget
+RUN wget http://apache.panu.it/qpid/proton/$PROTON_VERSION/qpid-proton-$PROTON_VERSION.tar.gz
+
+# following line is useful if you want to install Qpid Proton version before 0.9 (they are on Apache archive)
+#RUN wget http://archive.apache.org/dist/qpid/proton/$PROTON_VERSION/qpid-proton-$PROTON_VERSION.tar.gz
+
+RUN tar xvfz qpid-proton-$PROTON_VERSION.tar.gz
+
+# build Qpid Proton library
+RUN mkdir /qpid-proton-$PROTON_VERSION/build
+WORKDIR /qpid-proton-$PROTON_VERSION/build
+
+RUN cmake .. -DSYSINSTALL_BINDINGS=ON -DCMAKE_INSTALL_PREFIX=/usr && make install
+
+WORKDIR /
+CMD ["bash"]
