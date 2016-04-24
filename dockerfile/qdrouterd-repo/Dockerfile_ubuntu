@@ -1,0 +1,23 @@
+FROM ppatierno/qpid-proton-ubuntu:0.12.1
+
+MAINTAINER Paolo Patierno <ppatierno@live.com>
+
+# set Qpid Dispatch Router version
+ENV DISPATCH_VERSION 0.6.0
+
+# install git
+RUN apt-get install -y git
+
+# cloning Qpid Dispatch Router
+RUN git clone https://github.com/apache/qpid-dispatch.git
+
+# build Qpid Dispatch Router
+RUN mkdir /qpid-dispatch/build
+WORKDIR /qpid-dispatch/build
+
+RUN cmake .. -DCMAKE_INSTALL_PREFIX=/usr && make install
+
+EXPOSE 5672 5672
+
+WORKDIR /
+CMD ["qdrouterd"]
