@@ -17,6 +17,9 @@ WORKDIR /qpid-dispatch-$DISPATCH_VERSION/build
 
 RUN cmake .. -DCMAKE_INSTALL_PREFIX=/usr && make install
 
+# Add site-packages to the PYTHONPATH environment variable. This is because Ubuntu does not list the site-packages folder in the sys.path 
+ENV PYTHONPATH=/usr/lib/python2.7/site-packages
+
 EXPOSE 5672 5672
 
 WORKDIR /
