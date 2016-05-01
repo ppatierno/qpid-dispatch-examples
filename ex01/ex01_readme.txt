@@ -4,42 +4,44 @@ python simple_recv.py -a /my_address -m10
 
 1 sender
 
-python simple_send.py -a /my_address -m5
+python simple_send.py -a /my_address -m10
 
-Router Addresses
-  class   address          phase  in-proc  local  remote  in  out  thru  to-proc  from-proc
-  ===========================================================================================
-  local   $management             Y        0      0       0   0    0     0        0
-  mobile  $management      0      Y        0      0       2   0    0     2        0
-  mobile  my_address       0               2      0       0   0    0     0        0
-  local   temp.OIKMkVYySr                  1      0       0   0    0     0        0
+Router Links
+  type      dir  id  peer  class   addr                  phs  cap  undel  unsettled  deliveries  admin    oper
+  ==============================================================================================================
+  endpoint  out  8         mobile  my_address            0    250  0      0          0           enabled  up
+  endpoint  out  9         mobile  my_address            0    250  0      0          0           enabled  up
+  endpoint  in   10        mobile  $management           0    250  0      0          1           enabled  up
+  endpoint  out  11        local   temp.74KU0kDgOHDaU8+       250  0      0          0           enabled  up
 
-There are 2 local attached to /my_address : they are the two above receivers
+There are 2 endpoint for my_address (as output, from a router point of view) : they are the two above receivers
 
-Using "multiple" (standard configuration without "fixedAddress"), all receivers gets all the messages.
+Using "balanced" (standard configuration without "address"), messages are spread along receivers, in a "competing consumer" fashion
 Ex. sender sent 5 messages
 
-Router Addresses
-  class   address          phase  in-proc  local  remote  in  out  thru  to-proc  from-proc
-  ===========================================================================================
-  local   $management             Y        0      0       0   0    0     0        0
-  mobile  $management      0      Y        0      0       4   0    0     4        0
-  mobile  my_address       0               2      0       5   10   0     0        0
-  local   temp.XGspo3K5KJ                  1      0       0   0    0     0        0
+Router Links
+  type      dir  id  peer  class   addr                  phs  cap  undel  unsettled  deliveries  admin    oper
+  ==============================================================================================================
+  endpoint  out  8         mobile  my_address            0    250  0      0          3           enabled  up
+  endpoint  out  9         mobile  my_address            0    250  0      0          2           enabled  up
+  endpoint  in   13        mobile  $management           0    250  0      0          1           enabled  up
+  endpoint  out  14        local   temp.85k4ahsuHUpfQwu       250  0      0          0           enabled  up
 
-There are 5 messages "in" the /my_address and 10 messages "out" : each message is sent twice (to each receiver).
+Thre are 3 messages delivered to one endpoint and the other 2 to the other endpoint.
+Using "closest" as distribution doesn't change anything becase the two endpoint are connected to the same router
+so are "closed" at same level.
 
-Using "single" (with bias "closest" or "spread"), the messages are spread to receivers (one message per receiver)
-Es. sender sent 5 messages
+Using distribution "multicast", all messages are sent to all receivers.
 
-Router Addresses
-  class   address          phase  in-proc  local  remote  in  out  thru  to-proc  from-proc
-  ===========================================================================================
-  local   $management             Y        0      0       0   0    0     0        0
-  mobile  $management      0      Y        0      0       1   0    0     1        0
-  mobile  my_address       0               2      0       5   5    0     0        0
-  local   temp.uzvEHDuuMx                  1      0       0   0    0     0        0
+Router Links
+  type      dir  id  peer  class   addr                  phs  cap  undel  unsettled  deliveries  admin    oper
+  ==============================================================================================================
+  endpoint  out  4         mobile  my_address            0    250  0      0          5           enabled  up
+  endpoint  out  5         mobile  my_address            0    250  0      0          5           enabled  up
+  endpoint  in   7         mobile  $management           0    250  0      0          1           enabled  up
+  endpoint  out  8         local   temp.Aes_4LlwCftfIiY       250  0      0          0           enabled  up
 
-There are 5 messages "in" the /my_address and 5 messages "out" : each message sent only one time (3 messages to a receiver, 2 messages to the other receiver)
+
+There are 5 messages delivered to both endpoints.
 
 
