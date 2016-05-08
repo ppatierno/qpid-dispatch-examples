@@ -1,4 +1,4 @@
-FROM ppatierno/qpid-proton-ubuntu:0.12.1
+FROM ppatierno/qpid-proton-ubuntu:0.12.2
 
 MAINTAINER Paolo Patierno <ppatierno@live.com>
 
