@@ -1,0 +1,157 @@
+Router Addresses
+  class     addr                   phs  distrib       in-proc  local  remote  cntnr  in  out  thru  to-proc  from-proc
+  ======================================================================================================================
+  local     $_management_internal       closest       1        0      0       0      0   0    0     0        0
+  local     $displayname                closest       1        0      0       0      0   0    0     0        0
+  mobile    $management            0    closest       1        0      0       0      1   0    0     1        0
+  local     $management                 closest       1        0      0       0      0   0    0     0        0
+  router    Router.B                    closest       0        0      1       0      0   0    5     0        5
+  link-in   my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  link-out  my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  mobile    my_queue_wp            1    balanced      0        0      0       0      0   0    0     0        0
+  mobile    my_queue_wp            0    balanced      0        1      0       0      0   0    0     0        0
+  local     qdhello                     flood         1        1      0       0      0   0    0     20       25
+  local     qdrouter                    flood         1        0      0       0      0   0    0     4        0
+  topo      qdrouter                    flood         1        0      1       0      0   0    2     3        3
+  local     qdrouter.ma                 multicast     1        0      0       0      0   0    0     1        0
+  topo      qdrouter.ma                 multicast     1        0      1       0      0   0    0     0        1
+  local     temp.NRF_vGRswctCIXw        closest       0        1      0       0      0   0    0     0        0
+
+
+--> receiver on my_address
+
+Router Addresses
+  class     addr                   phs  distrib       in-proc  local  remote  cntnr  in  out  thru  to-proc  from-proc
+  ======================================================================================================================
+  local     $_management_internal       closest       1        0      0       0      0   0    0     0        0
+  local     $displayname                closest       1        0      0       0      0   0    0     0        0
+  mobile    $management            0    closest       1        0      0       0      3   0    0     3        0
+  local     $management                 closest       1        0      0       0      0   0    0     0        0
+  router    Router.B                    closest       0        0      1       0      0   0    5     0        5
+  mobile    my_address             0    closest       0        1      0       0      0   0    0     0        0
+  link-in   my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  link-out  my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  mobile    my_queue_wp            1    balanced      0        0      0       0      0   0    0     0        0
+  mobile    my_queue_wp            0    balanced      0        1      0       0      0   0    0     0        0
+  local     qdhello                     flood         1        1      0       0      0   0    0     161      152
+  local     qdrouter                    flood         1        0      0       0      0   0    0     4        0
+  topo      qdrouter                    flood         1        0      1       0      0   0    7     8        8
+  local     qdrouter.ma                 multicast     1        0      0       0      0   0    0     1        0
+  topo      qdrouter.ma                 multicast     1        0      1       0      0   0    1     0        2
+  local     temp.fAUbe7dPG82oLth        closest       0        1      0       0      0   0    0     0        0
+
+--> message sent on my_address
+
+Router Addresses
+  class     addr                   phs  distrib       in-proc  local  remote  cntnr  in  out  thru  to-proc  from-proc
+  ======================================================================================================================
+  local     $_management_internal       closest       1        0      0       0      0   0    0     0        0
+  local     $displayname                closest       1        0      0       0      0   0    0     0        0
+  mobile    $management            0    closest       1        0      0       0      4   0    0     4        0
+  local     $management                 closest       1        0      0       0      0   0    0     0        0
+  router    Router.B                    closest       0        0      1       0      0   0    5     0        5
+  mobile    my_address             0    closest       0        1      0       0      1   1    0     0        0
+  link-in   my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  link-out  my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  mobile    my_queue_wp            1    balanced      0        0      0       0      0   0    0     0        0
+  mobile    my_queue_wp            0    balanced      0        1      0       0      0   0    0     0        0
+  local     qdhello                     flood         1        1      0       0      0   0    0     244      230
+  local     qdrouter                    flood         1        0      0       0      0   0    0     4        0
+  topo      qdrouter                    flood         1        0      1       0      0   0    10    11       11
+  local     qdrouter.ma                 multicast     1        0      0       0      0   0    0     1        0
+  topo      qdrouter.ma                 multicast     1        0      1       0      0   0    1     0        2
+  local     temp.VSbQhxzsb1+U5kR        closest       0        1      0       0      0   0    0     0        0
+
+--> receiver on my_queue
+
+Router Addresses
+  class     addr                   phs  distrib       in-proc  local  remote  cntnr  in  out  thru  to-proc  from-proc
+  ======================================================================================================================
+  local     $_management_internal       closest       1        0      0       0      0   0    0     0        0
+  local     $displayname                closest       1        0      0       0      0   0    0     0        0
+  mobile    $management            0    closest       1        0      0       0      4   0    0     4        0
+  local     $management                 closest       1        0      0       0      0   0    0     0        0
+  router    Router.B                    closest       0        0      1       0      0   0    5     0        5
+  mobile    my_address             0    closest       0        1      0       0      1   1    0     0        0
+  link-in   my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  link-out  my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  mobile    my_queue_wp            1    balanced      0        0      0       0      0   0    0     0        0
+  mobile    my_queue_wp            0    balanced      0        1      0       0      0   0    0     0        0
+  local     qdhello                     flood         1        1      0       0      0   0    0     244      230
+  local     qdrouter                    flood         1        0      0       0      0   0    0     4        0
+  topo      qdrouter                    flood         1        0      1       0      0   0    10    11       11
+  local     qdrouter.ma                 multicast     1        0      0       0      0   0    0     1        0
+  topo      qdrouter.ma                 multicast     1        0      1       0      0   0    1     0        2
+  local     temp.VSbQhxzsb1+U5kR        closest       0        1      0       0      0   0    0     0        0
+
+--> message sent on my_queue
+
+Router Addresses
+  class     addr                   phs  distrib       in-proc  local  remote  cntnr  in  out  thru  to-proc  from-proc
+  ======================================================================================================================
+  local     $_management_internal       closest       1        0      0       0      0   0    0     0        0
+  local     $displayname                closest       1        0      0       0      0   0    0     0        0
+  mobile    $management            0    closest       1        0      0       0      6   0    0     6        0
+  local     $management                 closest       1        0      0       0      0   0    0     0        0
+  router    Router.B                    closest       0        0      1       0      0   0    5     0        5
+  mobile    my_address             0    closest       0        1      0       0      1   1    0     0        0
+  link-in   my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  link-out  my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  mobile    my_queue_wp            1    balanced      0        0      0       0      0   0    0     0        0
+  mobile    my_queue_wp            0    balanced      0        1      0       0      0   0    0     0        0
+  local     qdhello                     flood         1        1      0       0      0   0    0     356      336
+  local     qdrouter                    flood         1        0      0       0      0   0    0     4        0
+  topo      qdrouter                    flood         1        0      1       0      0   0    14    14       15
+  local     qdrouter.ma                 multicast     1        0      0       0      0   0    0     1        0
+  topo      qdrouter.ma                 multicast     1        0      1       0      0   0    1     0        2
+  local     temp.jlsxr4sdLfZn5bN        closest       0        1      0       0      0   0    0     0        0
+
+--> receiver on my_queue_wp
+
+Router Addresses
+  class     addr                   phs  distrib       in-proc  local  remote  cntnr  in  out  thru  to-proc  from-proc
+  ======================================================================================================================
+  local     $_management_internal       closest       1        0      0       0      0   0    0     0        0
+  local     $displayname                closest       1        0      0       0      0   0    0     0        0
+  mobile    $management            0    closest       1        0      0       0      7   0    0     7        0
+  local     $management                 closest       1        0      0       0      0   0    0     0        0
+  router    Router.B                    closest       0        0      1       0      0   0    5     0        5
+  mobile    my_address             0    closest       0        1      0       0      1   1    0     0        0
+  link-in   my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  link-out  my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  mobile    my_queue_wp            1    balanced      0        1      0       0      0   0    0     0        0
+  mobile    my_queue_wp            0    balanced      0        1      0       0      0   0    0     0        0
+  local     qdhello                     flood         1        1      0       0      0   0    0     427      402
+  local     qdrouter                    flood         1        0      0       0      0   0    0     4        0
+  topo      qdrouter                    flood         1        0      1       0      0   0    16    17       17
+  local     qdrouter.ma                 multicast     1        0      0       0      0   0    0     1        0
+  topo      qdrouter.ma                 multicast     1        0      1       0      0   0    2     0        3
+  local     temp.wfxMCq2c7YwsLP5        closest       0        1      0       0      0   0    0     0        0
+
+--> message sent on my_queue_wp
+
+Router Addresses
+  class     addr                   phs  distrib       in-proc  local  remote  cntnr  in  out  thru  to-proc  from-proc
+  ======================================================================================================================
+  local     $_management_internal       closest       1        0      0       0      0   0    0     0        0
+  local     $displayname                closest       1        0      0       0      0   0    0     0        0
+  mobile    $management            0    closest       1        0      0       0      8   0    0     8        0
+  local     $management                 closest       1        0      0       0      0   0    0     0        0
+  router    Router.B                    closest       0        0      1       0      0   0    5     0        5
+  mobile    my_address             0    closest       0        1      0       0      1   1    0     0        0
+  link-in   my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  link-out  my_queue                    linkBalanced  0        0      0       1      0   0    0     0        0
+  mobile    my_queue_wp            1    balanced      0        1      0       0      1   1    0     0        0
+  mobile    my_queue_wp            0    balanced      0        1      0       0      1   1    0     0        0
+  local     qdhello                     flood         1        1      0       0      0   0    0     741      706
+  local     qdrouter                    flood         1        0      0       0      0   0    0     4        0
+  topo      qdrouter                    flood         1        0      1       0      0   0    27    28       28
+  local     qdrouter.ma                 multicast     1        0      0       0      0   0    0     1        0
+  topo      qdrouter.ma                 multicast     1        0      1       0      0   0    2     0        3
+  local     temp.IJSoXoY_lX0TiDE        closest       0        1      0       0      0   0    0     0        0
+
+
+
+
+
+

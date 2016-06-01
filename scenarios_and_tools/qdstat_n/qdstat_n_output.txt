@@ -1,0 +1,22 @@
+[root@localhost /]# qdstat -b localhost:5673 -n -v
+Routers in the Network
+  router-id  next-hop  link  cost  neighbors                 valid-origins
+  ==========================================================================
+  Router.A   (self)    -           ['Router.B']              []
+  Router.B   -         0     1     ['Router.A', 'Router.C']  []
+  Router.C   Router.B  -     2     ['Router.B']              []
+[root@localhost /]# qdstat -b localhost:5673 -n -v -r Router.B
+Routers in the Network
+  router-id  next-hop  link  cost  neighbors                 valid-origins
+  ==========================================================================
+  Router.A   -         0     1     ['Router.B']              ['Router.C']
+  Router.B   (self)    -           ['Router.A', 'Router.C']  []
+  Router.C   -         1     1     ['Router.B']              ['Router.A']
+[root@localhost /]# qdstat -b localhost:5673 -n -v -r Router.C
+Routers in the Network
+  router-id  next-hop  link  cost  neighbors                 valid-origins
+  ==========================================================================
+  Router.A   Router.B  -     2     ['Router.B']              []
+  Router.B   -         0     1     ['Router.A', 'Router.C']  []
+  Router.C   (self)    -           ['Router.B']              []
+

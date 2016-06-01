@@ -1,0 +1,19 @@
+Router Links
+  type            dir  conn id  id  peer  class   addr                  phs  cap  undel  unsettled  deliveries  admin    oper
+  =============================================================================================================================
+  router-control  in   2        7                                            250  0      0          2876        enabled  up
+  router-control  out  2        8         local   qdhello                    250  0      0          2716        enabled  up
+  inter-router    in   2        9                                            250  0      0          1           enabled  up
+  inter-router    out  2        10                                           250  0      0          1           enabled  up
+  endpoint        in   1        11        mobile  my_queue_wp           1    250  0      0          3           enabled  up
+  endpoint        out  1        12        mobile  my_queue_wp           0    250  0      0          3           enabled  up
+  endpoint        out  4        15        mobile  my_address            0    250  0      0          0           enabled  up
+  endpoint        out  6        18  19                                       250  0      0          1           enabled  up
+  endpoint        in   1        19  18                                       0    0      0          1           enabled  up
+  endpoint        out  19       40        mobile  my_queue_wp           1    250  0      0          1           enabled  up
+  endpoint        in   24       48        mobile  $management           0    250  0      0          1           enabled  up
+  endpoint        out  24       49        local   temp.mx5HxzUe2Eddw_s       250  0      0          0           enabled  up
+
+
+
+
