@@ -12,6 +12,14 @@ openssl req -new -sha256 -key router-key.pem -subj '/O=A-MQ7 Interconnet/CN=loca
 # generate X509 certificate for router signed by CA
 openssl x509 -req -in router-csr.pem -CA ca-cert.pem -CAkey ca-key.pem -CAcreateserial -out router-cert.pem
 
+# Router Key password protected
+# generate private key for router
+openssl genrsa -des3 -passout pass:routerKeyPassword -out router-key-pwd.pem 2048
+# generate a certificate request for router
+openssl req -new -sha256 -key router-key-pwd.pem -passin pass:routerKeyPassword -subj '/O=A-MQ7 Interconnet/CN=localhost.localdomain' -out router-csr-pwd.pem
+# generate X509 certificate for router signed by CA
+openssl x509 -req -in router-csr-pwd.pem -CA ca-cert.pem -CAkey ca-key.pem -CAcreateserial -out router-cert-pwd.pem
+
 # generate private key for receiver client
 openssl genrsa -out recv-key.pem 2048
 # generate a certificate request for receiver client
