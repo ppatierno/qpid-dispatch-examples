@@ -40,6 +40,8 @@ class Send(MessagingHandler):
     def on_start(self, event):
         self.container = event.container
         self.connection = self.container.connect(self.url, ssl_domain=self.ssl_domain)
+	# for SASL PLAIN authentication
+	#self.connection = self.container.connect(self.url, ssl_domain=self.ssl_domain, sasl_enabled=True, allowed_mechs=b"PLAIN", user="test@domain.com", password="password")
         self.sender = self.container.create_sender(self.connection, "examples")
 
     def on_sendable(self, event):
