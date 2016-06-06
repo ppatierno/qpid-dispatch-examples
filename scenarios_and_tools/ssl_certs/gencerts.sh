@@ -42,6 +42,18 @@ openssl req -new -sha256 -key bad-ca-key.pem -subj '/O=Trust Me Inc./CN=Trusted.
 # generate a self signed X509 certificate for CA
 openssl x509 -req -in bad-ca-csr.pem -signkey bad-ca-key.pem -out bad-ca-cert.pem
 
+# *** ActiveMQ ***
+# Broker key password protected
+# generate private key for broker
+openssl genrsa -des3 -passout pass:brokerKeyPassword -out broker-key-pwd.pem 2048
+# generate a certificate request for broker
+openssl req -new -sha256 -key broker-key-pwd.pem -passin pass:brokerKeyPassword -subj '/O=ActiveMQ/CN=localhost.localdomain' -out broker-csr-pwd.pem
+# generate X509 certificate for broker signed by CA
+openssl x509 -req -in broker-csr-pwd.pem -CA ca-cert.pem -CAkey ca-key.pem -CAcreateserial -out broker-cert-pwd.pem
+# export certificate and private key in PKCS12 format (needed by keystore)
+openssl pkcs12 -export -in broker-cert-pwd.pem -inkey broker-key-pwd.pem -passin pass:brokerKeyPassword -certfile ca-cert.pem -out broker-cert-pwd.p12
+# import certificates into keystore
+keytool -importkeystore -srckeystore broker-cert-pwd.p12 -destkeystore broker.ks -srcstoretype pkcs12
 
 # print information about certificates
 # openssl x509 -in ca-cert.pem -text
