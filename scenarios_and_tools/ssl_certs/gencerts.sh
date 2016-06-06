@@ -54,6 +54,7 @@ openssl x509 -req -in broker-csr-pwd.pem -CA ca-cert.pem -CAkey ca-key.pem -CAcr
 openssl pkcs12 -export -in broker-cert-pwd.pem -inkey broker-key-pwd.pem -passin pass:brokerKeyPassword -certfile ca-cert.pem -out broker-cert-pwd.p12
 # import certificates into keystore
 keytool -importkeystore -srckeystore broker-cert-pwd.p12 -destkeystore broker.ks -srcstoretype pkcs12
+keytool -import -file ca-cert.pem -trustcacerts -keystore broker.ks
 
 # print information about certificates
 # openssl x509 -in ca-cert.pem -text
