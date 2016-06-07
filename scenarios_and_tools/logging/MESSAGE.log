@@ -1,0 +1,250 @@
+Router.A
+
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\005\00\00\00\08\a1\04seenE'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\8e\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter.ma' body='\d1\00\00\00'\00\00\00\06\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter.ma' body='\d1\00\00\00b\00\00\00
+\a1
+mobil'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\8e\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link qdlink.FYHqBX+TtwXZHfV
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link qdlink.yU1tnPs5KbMlieM
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter.ma' body='\d1\00\00\00'\00\00\00\06\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter.ma' body='\d1\00\00\00b\00\00\00
+\a1
+mobil'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter.ma' body='\d1\00\00\00L\00\00\00
+\a1
+mobil'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link qdlink.XQ+Bb0l8Lb8+uS1
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link qdlink.Qu41iKMN+n810hB
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter.ma' body='\d1\00\00\00L\00\00\00
+\a1
+mobil'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:58 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:58 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+
+Router.B
+
+Tue Jun  7 14:36:50 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\005\00\00\00\08\a1\04seenE'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\005\00\00\00\08\a1\04seenE'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\8e\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter.ma' body='\d1\00\00\00'\00\00\00\06\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\8e\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter.ma' body='\d1\00\00\00b\00\00\00
+\a1
+mobil'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\8e\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link 4b5987b1-2f4e-43ee-a553-3c9e6733523e-my_queue_wp
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link qdlink.FYHqBX+TtwXZHfV
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter.ma' body='\d1\00\00\00'\00\00\00\06\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter.ma' body='\d1\00\00\00'\00\00\00\06\a1\02id\a1\08R'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter.ma' body='\d1\00\00\00b\00\00\00
+\a1
+mobil'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter.ma' body='\d1\00\00\00b\00\00\00
+\a1
+mobil'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter.ma' body='\d1\00\00\00L\00\00\00
+\a1
+mobil'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter.ma' body='\d1\00\00\00L\00\00\00
+\a1
+mobil'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link qdlink.Qu41iKMN+n810hB
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link qdlink.DzoSqCRRs1Y6Off
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter.ma' body='\d1\00\00\00L\00\00\00
+\a1
+mobil'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter.ma' body='\d1\00\00\00L\00\00\00
+\a1
+mobil'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.p9XmBm19uDqx50R
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:58 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:58 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:58 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.phMsJOq7YaFsGAG
+Tue Jun  7 14:36:58 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+
+Router.C
+
+Tue Jun  7 14:36:50 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\005\00\00\00\08\a1\04seenE'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:51 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:52 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:53 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.B/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\8e\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter.ma' body='\d1\00\00\00'\00\00\00\06\a1\02id\a1\08R'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:54 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter.ma' body='\d1\00\00\00b\00\00\00
+\a1
+mobil'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter.ma' body='\d1\00\00\00L\00\00\00
+\a1
+mobil'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/Router.C/qdrouter' body='\d1\00\00\00\1b\00\00\00\04\a1\02id\a1\08R'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/Router.A/qdrouter' body='\d1\00\00\00\82\00\00\00
+\a1\06ls_se'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Received Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link qdlink.DzoSqCRRs1Y6Off
+Tue Jun  7 14:36:55 2016 MESSAGE (trace) Sending Message{ body='\d1\00\00\00\10\00\00\00\02\a1\08seque'} on link e7e0c21c-9ff5-4cd7-af01-279c2f9d9078-my_queue_wp
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:56 2016 MESSAGE (trace) Sending Message{to='amqp:/_topo/0/all/qdrouter.ma' body='\d1\00\00\00L\00\00\00
+\a1
+mobil'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:57 2016 MESSAGE (trace) Sending Message{to='amqp:/_local/qdhello' body='\d1\00\00\00G\00\00\00\08\a1\04seen\d0'} on link qdlink.JIfR4TzxH1_5XK4
+Tue Jun  7 14:36:58 2016 MESSAGE (trace) Received Message{to='amqp:/_local/qdhello' body='\d1\00\00\00Q\00\00\00\08\a1\04seen\d0'} on link qdlink.q6xaacP4Li+sq7o
+Tue Jun  7 14:36:58 2016 MESSAGE (trace) Received Message{to='amqp:/_topo/0/all/qdrouter' body='\d1\00\00\00F\00\00\00
+\a1\06ls_se'} on link qdlink.q6xaacP4Li+sq7o
+

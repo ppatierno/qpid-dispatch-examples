@@ -1,0 +1,23 @@
+Router.A
+
+Tue Jun  7 14:27:20 2016 ROUTER_MA (trace) SENT: MAU(id=Router.A area=0 mobile_seq=1 add=['Cmy_queue', 'Dmy_queue', 'M0my_queue_wp'] del=[])
+Tue Jun  7 14:27:21 2016 ROUTER_MA (trace) RCVD: MAR(id=Router.C area=0 have_seq=0)
+Tue Jun  7 14:27:21 2016 ROUTER_MA (trace) SENT: MAU(id=Router.A area=0 mobile_seq=1 add=['Cmy_queue', 'Dmy_queue', 'M0my_queue_wp'] del=[])
+Tue Jun  7 14:27:22 2016 ROUTER_MA (trace) RCVD: MAR(id=Router.B area=0 have_seq=0)
+Tue Jun  7 14:27:22 2016 ROUTER_MA (trace) SENT: MAU(id=Router.A area=0 mobile_seq=1 add=['Cmy_queue', 'Dmy_queue', 'M0my_queue_wp'] del=[])
+Tue Jun  7 14:27:39 2016 ROUTER_MA (trace) RCVD: MAU(id=Router.C area=0 mobile_seq=1 add=['M0my_test'] del=[])
+Tue Jun  7 14:27:51 2016 ROUTER_MA (trace) RCVD: MAU(id=Router.C area=0 mobile_seq=2 add=[] del=['M0my_test'])
+
+Router.B
+
+Tue Jun  7 14:27:22 2016 ROUTER_MA (trace) SENT: MAR(id=Router.B area=0 have_seq=0)
+Tue Jun  7 14:27:22 2016 ROUTER_MA (trace) RCVD: MAU(id=Router.A area=0 mobile_seq=1 add=['Cmy_queue', 'Dmy_queue', 'M0my_queue_wp'] del=[])
+Tue Jun  7 14:27:39 2016 ROUTER_MA (trace) RCVD: MAU(id=Router.C area=0 mobile_seq=1 add=['M0my_test'] del=[])
+Tue Jun  7 14:27:51 2016 ROUTER_MA (trace) RCVD: MAU(id=Router.C area=0 mobile_seq=2 add=[] del=['M0my_test'])
+
+Router.C
+
+Tue Jun  7 14:27:21 2016 ROUTER_MA (trace) SENT: MAR(id=Router.C area=0 have_seq=0)
+Tue Jun  7 14:27:21 2016 ROUTER_MA (trace) RCVD: MAU(id=Router.A area=0 mobile_seq=1 add=['Cmy_queue', 'Dmy_queue', 'M0my_queue_wp'] del=[])
+Tue Jun  7 14:27:39 2016 ROUTER_MA (trace) SENT: MAU(id=Router.C area=0 mobile_seq=1 add=['M0my_test'] del=[])
+Tue Jun  7 14:27:51 2016 ROUTER_MA (trace) SENT: MAU(id=Router.C area=0 mobile_seq=2 add=[] del=['M0my_test'])

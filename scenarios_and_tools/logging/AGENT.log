@@ -1,0 +1,187 @@
+Router.A
+
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=trace+, identity=log/AGENT, module=AGENT, name=log/AGENT, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_LS, module=ROUTER_LS, name=log/ROUTER_LS, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=info+, identity=log/DEFAULT, module=DEFAULT, name=log/DEFAULT, output=stderr, source=False, timestamp=True, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_MA, module=ROUTER_MA, name=log/ROUTER_MA, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/DISPATCH, module=DISPATCH, name=log/DISPATCH, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_HELLO, module=ROUTER_HELLO, name=log/ROUTER_HELLO, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/SERVER, module=SERVER, name=log/SERVER, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/POLICY, module=POLICY, name=log/POLICY, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/CONTAINER, module=CONTAINER, name=log/CONTAINER, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ERROR, module=ERROR, name=log/ERROR, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_CORE, module=ROUTER_CORE, name=log/ROUTER_CORE, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER, module=ROUTER, name=log/ROUTER, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/MESSAGE, module=MESSAGE, name=log/MESSAGE, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/CONFIG, module=CONFIG, name=log/CONFIG, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: ContainerEntity(containerName=00000000-0000-0000-0000-000000000000, identity=container/00000000-0000-0000-0000-000000000000, name=container/00000000-0000-0000-0000-000000000000, type=org.apache.qpid.dispatch.container, workerThreads=4)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: RouterEntity(area=0, helloInterval=1, helloMaxAge=3, id=Router.A, mobileAddrMaxAge=60, mode=interior, raInterval=30, raIntervalFlux=4, remoteLsMaxAge=60, saslConfigName=qdrouterd, type=org.apache.qpid.dispatch.router, workerThreads=4)
+Tue Jun  7 15:07:32 2016 SERVER (info) Container Name: Router.A
+Tue Jun  7 15:07:32 2016 ROUTER (info) Router started in Interior mode, area=0 id=Router.A
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) Router Core thread running. 0/Router.A
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) In-process subscription M/$management
+Tue Jun  7 15:07:32 2016 ROUTER (info) Router Engine Instantiated: id=Router.A instance=1465312052 max_routers=128
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) In-process subscription L/$management
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) In-process subscription L/qdrouter
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) In-process subscription L/qdrouter.ma
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) In-process subscription T/qdrouter
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) In-process subscription T/qdrouter.ma
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) In-process subscription L/qdhello
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: RouterNodeEntity(address=amqp:/_topo/0/Router.A, id=Router.A, instance=1465312052, linkState=[], nextHop=(self), type=org.apache.qpid.dispatch.router.node, validOrigins=[])
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=48, localFreeListMax=32, totalAllocFromHeap=48, totalFreeToHeap=0, transferBatchSize=16, type=org.apache.qpid.dispatch.allocator, typeName=qd_log_entry_t, typeSize=2104)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=128, localFreeListMax=128, totalAllocFromHeap=128, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_field_iterator_t, typeSize=128)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=128, localFreeListMax=128, totalAllocFromHeap=128, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_hash_item_t, typeSize=32)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_node_t, typeSize=56)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=128, localFreeListMax=128, totalAllocFromHeap=128, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_timer_t, typeSize=56)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qdr_action_t, typeSize=160)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qdr_field_t, typeSize=40)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=16, localFreeListMax=32, totalAllocFromHeap=16, totalFreeToHeap=0, transferBatchSize=16, type=org.apache.qpid.dispatch.allocator, typeName=qd_buffer_t, typeSize=536)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=16, localFreeListMax=32, totalAllocFromHeap=16, totalFreeToHeap=0, transferBatchSize=16, type=org.apache.qpid.dispatch.allocator, typeName=qdr_address_t, typeSize=264)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_bitmask_t, typeSize=24)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_hash_handle_t, typeSize=16)
+Tue Jun  7 15:07:32 2016 AGENT (info) Activating management agent on $_management_internal
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) In-process subscription L/$_management_internal
+Tue Jun  7 15:07:32 2016 DISPLAYNAME (info) Activating DisplayNameService on $displayname
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) In-process subscription L/$displayname
+Tue Jun  7 15:07:32 2016 CONN_MGR (info) Configured Listener: 0.0.0.0:5673 proto=any role=normal
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: ListenerEntity(addr=127.0.0.1, authenticatePeer=False, cost=1, host=0.0.0.0, identity=listener/0.0.0.0:5673:None, idleTimeoutSeconds=16, maxFrameSize=16384, port=5673, requireEncryption=False, requireSsl=False, role=normal, stripAnnotations=both, type=org.apache.qpid.dispatch.listener)
+Tue Jun  7 15:07:32 2016 CONN_MGR (info) Configured Connector: 127.0.0.1:5001 proto=any role=inter-router
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: ConnectorEntity(addr=127.0.0.1, allowRedirect=True, cost=1, host=127.0.0.1, identity=connector/127.0.0.1:5001:INTER_ROUTER, idleTimeoutSeconds=16, maxFrameSize=65536, name=INTER_ROUTER, port=5001, role=inter-router, stripAnnotations=both, type=org.apache.qpid.dispatch.connector, verifyHostName=True)
+Tue Jun  7 15:07:32 2016 CONN_MGR (info) Configured Connector: 127.0.0.1:5672 proto=any role=route-container
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: ConnectorEntity(addr=127.0.0.1, allowRedirect=True, cost=1, host=127.0.0.1, identity=connector/127.0.0.1:5672:BROKER, idleTimeoutSeconds=16, maxFrameSize=65536, name=BROKER, port=5672, role=route-container, stripAnnotations=both, type=org.apache.qpid.dispatch.connector, verifyHostName=True)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: RouterConfigAddressEntity(distribution=closest, identity=router.config.address/0, name=router.config.address/0, prefix=my_address, type=org.apache.qpid.dispatch.router.config.address, waypoint=False)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: RouterConfigAddressEntity(distribution=balanced, identity=router.config.address/1, name=router.config.address/1, prefix=my_queue_wp, type=org.apache.qpid.dispatch.router.config.address, waypoint=True)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: RouterConfigLinkrouteEntity(connection=BROKER, dir=in, distribution=linkBalanced, identity=router.config.linkRoute/0, name=router.config.linkRoute/0, prefix=my_queue, type=org.apache.qpid.dispatch.router.config.linkRoute)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: RouterConfigLinkrouteEntity(connection=BROKER, dir=out, distribution=linkBalanced, identity=router.config.linkRoute/1, name=router.config.linkRoute/1, prefix=my_queue, type=org.apache.qpid.dispatch.router.config.linkRoute)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: RouterConfigAutolinkEntity(addr=my_queue_wp, connection=BROKER, dir=in, identity=router.config.autoLink/0, name=router.config.autoLink/0, type=org.apache.qpid.dispatch.router.config.autoLink)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: RouterConfigAutolinkEntity(addr=my_queue_wp, connection=BROKER, dir=out, identity=router.config.autoLink/1, name=router.config.autoLink/1, type=org.apache.qpid.dispatch.router.config.autoLink)
+Tue Jun  7 15:07:32 2016 POLICY (info) Policy configured maximumConnections: 0, policyFolder: '', access rules enabled: 'false'
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: Entity(defaultApplication=, defaultApplicationEnabled=False, enableAccessRules=False, maximumConnections=0, policyFolder=, type=org.apache.qpid.dispatch.policy)
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: ConsoleEntity(identity=console/0, name=console/0, type=org.apache.qpid.dispatch.console, wsport=5673)
+Tue Jun  7 15:07:32 2016 POLICY (info) Policy fallback defaultApplication is disabled
+Tue Jun  7 15:07:32 2016 SERVER (info) Operational, 4 Threads Running
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) Link Route Activated '3' on connection BROKER
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) Link Route Activated '4' on connection BROKER
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) Auto Link Activated '5' on connection BROKER
+Tue Jun  7 15:07:32 2016 ROUTER_CORE (info) Auto Link Activated '6' on connection BROKER
+Tue Jun  7 15:07:33 2016 AGENT (debug) Add entity: RouterNodeEntity(address=amqp:/_topo/0/Router.B, cost=None, id=Router.B, instance=None, linkState=[], nextHop=None, routerLink=None, type=org.apache.qpid.dispatch.router.node, validOrigins=None)
+Tue Jun  7 15:07:34 2016 AGENT (debug) Add entity: RouterNodeEntity(address=amqp:/_topo/0/Router.C, cost=None, id=Router.C, instance=None, linkState=[], nextHop=None, routerLink=None, type=org.apache.qpid.dispatch.router.node, validOrigins=None)
+
+Router.B
+
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=trace+, identity=log/AGENT, module=AGENT, name=log/AGENT, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_LS, module=ROUTER_LS, name=log/ROUTER_LS, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=info+, identity=log/DEFAULT, module=DEFAULT, name=log/DEFAULT, output=stderr, source=False, timestamp=True, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_MA, module=ROUTER_MA, name=log/ROUTER_MA, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/DISPATCH, module=DISPATCH, name=log/DISPATCH, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_HELLO, module=ROUTER_HELLO, name=log/ROUTER_HELLO, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/SERVER, module=SERVER, name=log/SERVER, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/POLICY, module=POLICY, name=log/POLICY, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/CONTAINER, module=CONTAINER, name=log/CONTAINER, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ERROR, module=ERROR, name=log/ERROR, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_CORE, module=ROUTER_CORE, name=log/ROUTER_CORE, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER, module=ROUTER, name=log/ROUTER, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/MESSAGE, module=MESSAGE, name=log/MESSAGE, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/CONFIG, module=CONFIG, name=log/CONFIG, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: ContainerEntity(containerName=00000000-0000-0000-0000-000000000000, identity=container/00000000-0000-0000-0000-000000000000, name=container/00000000-0000-0000-0000-000000000000, type=org.apache.qpid.dispatch.container, workerThreads=4)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: RouterEntity(area=0, helloInterval=1, helloMaxAge=3, id=Router.B, mobileAddrMaxAge=60, mode=interior, raInterval=30, raIntervalFlux=4, remoteLsMaxAge=60, saslConfigName=qdrouterd, type=org.apache.qpid.dispatch.router, workerThreads=4)
+Tue Jun  7 15:07:30 2016 SERVER (info) Container Name: Router.B
+Tue Jun  7 15:07:30 2016 ROUTER (info) Router started in Interior mode, area=0 id=Router.B
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) Router Core thread running. 0/Router.B
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) In-process subscription M/$management
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) In-process subscription L/$management
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) In-process subscription L/qdrouter
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) In-process subscription L/qdrouter.ma
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) In-process subscription T/qdrouter
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) In-process subscription T/qdrouter.ma
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) In-process subscription L/qdhello
+Tue Jun  7 15:07:30 2016 ROUTER (info) Router Engine Instantiated: id=Router.B instance=1465312050 max_routers=128
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: RouterNodeEntity(address=amqp:/_topo/0/Router.B, id=Router.B, instance=1465312050, linkState=[], nextHop=(self), type=org.apache.qpid.dispatch.router.node, validOrigins=[])
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=48, localFreeListMax=32, totalAllocFromHeap=48, totalFreeToHeap=0, transferBatchSize=16, type=org.apache.qpid.dispatch.allocator, typeName=qd_log_entry_t, typeSize=2104)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=128, localFreeListMax=128, totalAllocFromHeap=128, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_field_iterator_t, typeSize=128)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=128, localFreeListMax=128, totalAllocFromHeap=128, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_hash_item_t, typeSize=32)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_node_t, typeSize=56)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=128, localFreeListMax=128, totalAllocFromHeap=128, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_timer_t, typeSize=56)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qdr_action_t, typeSize=160)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qdr_field_t, typeSize=40)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=16, localFreeListMax=32, totalAllocFromHeap=16, totalFreeToHeap=0, transferBatchSize=16, type=org.apache.qpid.dispatch.allocator, typeName=qd_buffer_t, typeSize=536)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=16, localFreeListMax=32, totalAllocFromHeap=16, totalFreeToHeap=0, transferBatchSize=16, type=org.apache.qpid.dispatch.allocator, typeName=qdr_address_t, typeSize=264)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_bitmask_t, typeSize=24)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_hash_handle_t, typeSize=16)
+Tue Jun  7 15:07:30 2016 AGENT (info) Activating management agent on $_management_internal
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) In-process subscription L/$_management_internal
+Tue Jun  7 15:07:30 2016 DISPLAYNAME (info) Activating DisplayNameService on $displayname
+Tue Jun  7 15:07:30 2016 ROUTER_CORE (info) In-process subscription L/$displayname
+Tue Jun  7 15:07:30 2016 CONN_MGR (info) Configured Listener: 0.0.0.0:5001 proto=any role=inter-router
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: ListenerEntity(addr=127.0.0.1, authenticatePeer=False, cost=1, host=0.0.0.0, identity=listener/0.0.0.0:5001:None, idleTimeoutSeconds=16, maxFrameSize=16384, port=5001, requireEncryption=False, requireSsl=False, role=inter-router, stripAnnotations=both, type=org.apache.qpid.dispatch.listener)
+Tue Jun  7 15:07:30 2016 CONN_MGR (info) Configured Listener: 0.0.0.0:55672 proto=any role=normal
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: ListenerEntity(addr=127.0.0.1, authenticatePeer=False, cost=1, host=0.0.0.0, identity=listener/0.0.0.0:55672:None, idleTimeoutSeconds=16, maxFrameSize=16384, port=55672, requireEncryption=False, requireSsl=False, role=normal, stripAnnotations=both, type=org.apache.qpid.dispatch.listener)
+Tue Jun  7 15:07:30 2016 CONN_MGR (info) Configured Connector: 127.0.0.1:5002 proto=any role=inter-router
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: ConnectorEntity(addr=127.0.0.1, allowRedirect=True, cost=1, host=127.0.0.1, identity=connector/127.0.0.1:5002:INTER_ROUTER, idleTimeoutSeconds=16, maxFrameSize=65536, name=INTER_ROUTER, port=5002, role=inter-router, stripAnnotations=both, type=org.apache.qpid.dispatch.connector, verifyHostName=True)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: RouterConfigAddressEntity(distribution=balanced, identity=router.config.address/0, name=router.config.address/0, prefix=my_queue_wp, type=org.apache.qpid.dispatch.router.config.address, waypoint=True)
+Tue Jun  7 15:07:30 2016 POLICY (info) Policy configured maximumConnections: 0, policyFolder: '', access rules enabled: 'false'
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: Entity(defaultApplication=, defaultApplicationEnabled=False, enableAccessRules=False, maximumConnections=0, policyFolder=, type=org.apache.qpid.dispatch.policy)
+Tue Jun  7 15:07:30 2016 AGENT (debug) Add entity: ConsoleEntity(identity=console/0, name=console/0, type=org.apache.qpid.dispatch.console, wsport=5673)
+Tue Jun  7 15:07:30 2016 POLICY (info) Policy fallback defaultApplication is disabled
+Tue Jun  7 15:07:30 2016 SERVER (info) Operational, 4 Threads Running
+Tue Jun  7 15:07:32 2016 AGENT (debug) Add entity: RouterNodeEntity(address=amqp:/_topo/0/Router.C, cost=None, id=Router.C, instance=None, linkState=[], nextHop=None, routerLink=None, type=org.apache.qpid.dispatch.router.node, validOrigins=None)
+Tue Jun  7 15:07:33 2016 AGENT (debug) Add entity: RouterNodeEntity(address=amqp:/_topo/0/Router.A, cost=None, id=Router.A, instance=1465312052, linkState=[], nextHop=None, routerLink=None, type=org.apache.qpid.dispatch.router.node, validOrigins=None)
+
+Router.C
+
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=trace+, identity=log/AGENT, module=AGENT, name=log/AGENT, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_LS, module=ROUTER_LS, name=log/ROUTER_LS, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=info+, identity=log/DEFAULT, module=DEFAULT, name=log/DEFAULT, output=stderr, source=False, timestamp=True, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_MA, module=ROUTER_MA, name=log/ROUTER_MA, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/DISPATCH, module=DISPATCH, name=log/DISPATCH, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_HELLO, module=ROUTER_HELLO, name=log/ROUTER_HELLO, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/SERVER, module=SERVER, name=log/SERVER, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/POLICY, module=POLICY, name=log/POLICY, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/CONTAINER, module=CONTAINER, name=log/CONTAINER, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ERROR, module=ERROR, name=log/ERROR, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER_CORE, module=ROUTER_CORE, name=log/ROUTER_CORE, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/ROUTER, module=ROUTER, name=log/ROUTER, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/MESSAGE, module=MESSAGE, name=log/MESSAGE, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: LogEntity(enable=default, identity=log/CONFIG, module=CONFIG, name=log/CONFIG, type=org.apache.qpid.dispatch.log)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: ContainerEntity(containerName=00000000-0000-0000-0000-000000000000, identity=container/00000000-0000-0000-0000-000000000000, name=container/00000000-0000-0000-0000-000000000000, type=org.apache.qpid.dispatch.container, workerThreads=4)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: RouterEntity(area=0, helloInterval=1, helloMaxAge=3, id=Router.C, mobileAddrMaxAge=60, mode=interior, raInterval=30, raIntervalFlux=4, remoteLsMaxAge=60, saslConfigName=qdrouterd, type=org.apache.qpid.dispatch.router, workerThreads=4)
+Tue Jun  7 15:07:29 2016 SERVER (info) Container Name: Router.C
+Tue Jun  7 15:07:29 2016 ROUTER (info) Router started in Interior mode, area=0 id=Router.C
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) Router Core thread running. 0/Router.C
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) In-process subscription M/$management
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) In-process subscription L/$management
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) In-process subscription L/qdrouter
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) In-process subscription L/qdrouter.ma
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) In-process subscription T/qdrouter
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) In-process subscription T/qdrouter.ma
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) In-process subscription L/qdhello
+Tue Jun  7 15:07:29 2016 ROUTER (info) Router Engine Instantiated: id=Router.C instance=1465312049 max_routers=128
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: RouterNodeEntity(address=amqp:/_topo/0/Router.C, id=Router.C, instance=1465312049, linkState=[], nextHop=(self), type=org.apache.qpid.dispatch.router.node, validOrigins=[])
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=48, localFreeListMax=32, totalAllocFromHeap=48, totalFreeToHeap=0, transferBatchSize=16, type=org.apache.qpid.dispatch.allocator, typeName=qd_log_entry_t, typeSize=2104)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=128, localFreeListMax=128, totalAllocFromHeap=128, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_field_iterator_t, typeSize=128)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=128, localFreeListMax=128, totalAllocFromHeap=128, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_hash_item_t, typeSize=32)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_node_t, typeSize=56)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=128, localFreeListMax=128, totalAllocFromHeap=128, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_timer_t, typeSize=56)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qdr_action_t, typeSize=160)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qdr_field_t, typeSize=40)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=16, localFreeListMax=32, totalAllocFromHeap=16, totalFreeToHeap=0, transferBatchSize=16, type=org.apache.qpid.dispatch.allocator, typeName=qd_buffer_t, typeSize=536)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=16, localFreeListMax=32, totalAllocFromHeap=16, totalFreeToHeap=0, transferBatchSize=16, type=org.apache.qpid.dispatch.allocator, typeName=qdr_address_t, typeSize=264)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_bitmask_t, typeSize=24)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: AllocatorEntity(batchesRebalancedToGlobal=0, batchesRebalancedToThreads=0, globalFreeListMax=0, heldByThreads=64, localFreeListMax=128, totalAllocFromHeap=64, totalFreeToHeap=0, transferBatchSize=64, type=org.apache.qpid.dispatch.allocator, typeName=qd_hash_handle_t, typeSize=16)
+Tue Jun  7 15:07:29 2016 AGENT (info) Activating management agent on $_management_internal
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) In-process subscription L/$_management_internal
+Tue Jun  7 15:07:29 2016 DISPLAYNAME (info) Activating DisplayNameService on $displayname
+Tue Jun  7 15:07:29 2016 ROUTER_CORE (info) In-process subscription L/$displayname
+Tue Jun  7 15:07:29 2016 CONN_MGR (info) Configured Listener: 0.0.0.0:5002 proto=any role=inter-router
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: ListenerEntity(addr=127.0.0.1, authenticatePeer=False, cost=1, host=0.0.0.0, identity=listener/0.0.0.0:5002:None, idleTimeoutSeconds=16, maxFrameSize=16384, port=5002, requireEncryption=False, requireSsl=False, role=inter-router, stripAnnotations=both, type=org.apache.qpid.dispatch.listener)
+Tue Jun  7 15:07:29 2016 CONN_MGR (info) Configured Listener: 0.0.0.0:55673 proto=any role=normal
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: ListenerEntity(addr=127.0.0.1, authenticatePeer=False, cost=1, host=0.0.0.0, identity=listener/0.0.0.0:55673:None, idleTimeoutSeconds=16, maxFrameSize=16384, port=55673, requireEncryption=False, requireSsl=False, role=normal, stripAnnotations=both, type=org.apache.qpid.dispatch.listener)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: RouterConfigAddressEntity(distribution=balanced, identity=router.config.address/0, name=router.config.address/0, prefix=my_queue_wp, type=org.apache.qpid.dispatch.router.config.address, waypoint=True)
+Tue Jun  7 15:07:29 2016 POLICY (info) Policy configured maximumConnections: 0, policyFolder: '', access rules enabled: 'false'
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: Entity(defaultApplication=, defaultApplicationEnabled=False, enableAccessRules=False, maximumConnections=0, policyFolder=, type=org.apache.qpid.dispatch.policy)
+Tue Jun  7 15:07:29 2016 AGENT (debug) Add entity: ConsoleEntity(identity=console/0, name=console/0, type=org.apache.qpid.dispatch.console, wsport=5673)
+Tue Jun  7 15:07:29 2016 POLICY (info) Policy fallback defaultApplication is disabled
+Tue Jun  7 15:07:29 2016 SERVER (info) Operational, 4 Threads Running
+Tue Jun  7 15:07:31 2016 AGENT (debug) Add entity: RouterNodeEntity(address=amqp:/_topo/0/Router.B, cost=None, id=Router.B, instance=1465312050, linkState=[], nextHop=None, routerLink=None, type=org.apache.qpid.dispatch.router.node, validOrigins=None)
+Tue Jun  7 15:07:33 2016 AGENT (debug) Add entity: RouterNodeEntity(address=amqp:/_topo/0/Router.A, cost=None, id=Router.A, instance=None, linkState=[], nextHop=None, routerLink=None, type=org.apache.qpid.dispatch.router.node, validOrigins=None)
+

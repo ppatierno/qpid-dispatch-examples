@@ -1,0 +1,51 @@
+Router.A
+
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.B created: maskbit=1
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.B link set: link_id=0
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.C created: maskbit=2
+Tue Jun  7 13:28:27 2016 ROUTER (trace) Entered Router Flux Mode
+Tue Jun  7 13:28:27 2016 ROUTER (trace) Node Router.C next hop set: Router.B
+Tue Jun  7 13:28:27 2016 ROUTER (trace) Node Router.C valid origins: []
+Tue Jun  7 13:28:27 2016 ROUTER (trace) Node Router.C cost: 2
+Tue Jun  7 13:28:27 2016 ROUTER (trace) Node Router.B valid origins: []
+Tue Jun  7 13:28:27 2016 ROUTER (trace) Node Router.B cost: 1
+Tue Jun  7 13:28:31 2016 ROUTER (debug) Remote destination my_queue_wp;class=M;phase=1 mapped to router Router.C
+Tue Jun  7 13:28:33 2016 ROUTER (debug) Remote destination my_queue_wp;class=M;phase=1 unmapped from router Router.C
+Tue Jun  7 13:28:36 2016 ROUTER (trace) Exited Router Flux Mode
+
+Router.B
+
+Tue Jun  7 13:28:24 2016 ROUTER (trace) Node Router.C created: maskbit=1
+Tue Jun  7 13:28:24 2016 ROUTER (trace) Node Router.C link set: link_id=0
+Tue Jun  7 13:28:25 2016 ROUTER (trace) Entered Router Flux Mode
+Tue Jun  7 13:28:25 2016 ROUTER (trace) Node Router.C valid origins: []
+Tue Jun  7 13:28:25 2016 ROUTER (trace) Node Router.C cost: 1
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.A created: maskbit=2
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.A link set: link_id=1
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.A valid origins: ['Router.C']
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.A cost: 1
+Tue Jun  7 13:28:27 2016 ROUTER (trace) Node Router.C valid origins: ['Router.A']
+Tue Jun  7 13:28:27 2016 ROUTER (debug) Remote destination my_queue;class=C mapped to router Router.A
+Tue Jun  7 13:28:27 2016 ROUTER (debug) Remote destination my_queue;class=D mapped to router Router.A
+Tue Jun  7 13:28:27 2016 ROUTER (debug) Remote destination my_queue_wp;class=M;phase=0 mapped to router Router.A
+Tue Jun  7 13:28:31 2016 ROUTER (debug) Remote destination my_queue_wp;class=M;phase=1 mapped to router Router.C
+Tue Jun  7 13:28:33 2016 ROUTER (debug) Remote destination my_queue_wp;class=M;phase=1 unmapped from router Router.C
+Tue Jun  7 13:28:35 2016 ROUTER (trace) Exited Router Flux Mode
+
+Router.C
+
+Tue Jun  7 13:28:24 2016 ROUTER (trace) Node Router.B created: maskbit=1
+Tue Jun  7 13:28:24 2016 ROUTER (trace) Node Router.B link set: link_id=0
+Tue Jun  7 13:28:24 2016 ROUTER (trace) Entered Router Flux Mode
+Tue Jun  7 13:28:24 2016 ROUTER (trace) Node Router.B valid origins: []
+Tue Jun  7 13:28:24 2016 ROUTER (trace) Node Router.B cost: 1
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.A created: maskbit=2
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.A next hop set: Router.B
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.A valid origins: []
+Tue Jun  7 13:28:26 2016 ROUTER (trace) Node Router.A cost: 2
+Tue Jun  7 13:28:27 2016 ROUTER (debug) Remote destination my_queue;class=C mapped to router Router.A
+Tue Jun  7 13:28:27 2016 ROUTER (debug) Remote destination my_queue;class=D mapped to router Router.A
+Tue Jun  7 13:28:27 2016 ROUTER (debug) Remote destination my_queue_wp;class=M;phase=0 mapped to router Router.A
+Tue Jun  7 13:28:35 2016 ROUTER (trace) Exited Router Flux Mode
+
+

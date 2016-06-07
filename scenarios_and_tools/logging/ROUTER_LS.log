@@ -1,0 +1,145 @@
+Router.A
+
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) SENT: RA(id=Router.A area=0 inst=1465308600 ls_seq=0 mobile_seq=0)
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.B area=0)
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) SENT: LSU(id=Router.A area=0 inst=1465308600 ls_seq=0 ls=LS(id=Router.A area=0 ls_seq=0 peers={'Router.B': 1}))
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) SENT: LSR(id=Router.A area=0) to: Router.B
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.B area=0 inst=1465308595 ls_seq=2 ls=LS(id=Router.B area=0 ls_seq=2 peers={'Router.A': 1L, 'Router.C': 1L}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Local Link State: LS(id=Router.A area=0 ls_seq=1 peers={'Router.B': 1})
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Computed next hops: {'Router.C': 'Router.B', 'Router.B': 'Router.B'}
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Computed costs: {'Router.C': 2L, 'Router.B': 1}
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Computed valid origins: {'Router.C': [], 'Router.B': []}
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSR(id=Router.A area=0) to: Router.C
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSR(id=Router.A area=0) to: Router.B
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.B area=0 inst=1465308595 ls_seq=2 ls=LS(id=Router.B area=0 ls_seq=2 peers={'Router.A': 1L, 'Router.C': 1L}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.B area=0)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSU(id=Router.A area=0 inst=1465308600 ls_seq=1 ls=LS(id=Router.A area=0 ls_seq=1 peers={'Router.B': 1}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSR(id=Router.A area=0) to: Router.C
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.C area=0)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSU(id=Router.A area=0 inst=1465308600 ls_seq=1 ls=LS(id=Router.A area=0 ls_seq=1 peers={'Router.B': 1}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.C area=0 inst=1465308592 ls_seq=1 ls=LS(id=Router.C area=0 ls_seq=1 peers={'Router.B': 1L}))
+Tue Jun  7 14:10:03 2016 ROUTER_LS (trace) Computed next hops: {'Router.C': 'Router.B', 'Router.B': 'Router.B'}
+Tue Jun  7 14:10:03 2016 ROUTER_LS (trace) Computed costs: {'Router.C': 2L, 'Router.B': 1}
+Tue Jun  7 14:10:03 2016 ROUTER_LS (trace) Computed valid origins: {'Router.C': [], 'Router.B': []}
+Tue Jun  7 14:10:05 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:06 2016 ROUTER_LS (trace) SENT: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:06 2016 ROUTER_LS (trace) RCVD: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:09 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:10 2016 ROUTER_LS (trace) SENT: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:10 2016 ROUTER_LS (trace) RCVD: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:39 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:40 2016 ROUTER_LS (trace) SENT: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:40 2016 ROUTER_LS (trace) RCVD: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=3 mobile_seq=0)
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) SENT: LSR(id=Router.A area=0) to: Router.B
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.B area=0 inst=1465308595 ls_seq=3 ls=LS(id=Router.B area=0 ls_seq=3 peers={'Router.A': 1L}))
+
+Router.B
+
+Tue Jun  7 14:09:56 2016 ROUTER_LS (trace) SENT: RA(id=Router.B area=0 inst=1465308595 ls_seq=0 mobile_seq=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) Local Link State: LS(id=Router.B area=0 ls_seq=1 peers={'Router.C': 1})
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) Computed next hops: {'Router.C': 'Router.C'}
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) Computed costs: {'Router.C': 1}
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) Computed valid origins: {'Router.C': []}
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: LSR(id=Router.B area=0) to: Router.C
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: RA(id=Router.B area=0 inst=1465308595 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.C area=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: LSU(id=Router.B area=0 inst=1465308595 ls_seq=1 ls=LS(id=Router.B area=0 ls_seq=1 peers={'Router.C': 1}))
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: LSR(id=Router.B area=0) to: Router.C
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.C area=0 inst=1465308592 ls_seq=1 ls=LS(id=Router.C area=0 ls_seq=1 peers={'Router.B': 1L}))
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.C area=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: LSU(id=Router.B area=0 inst=1465308595 ls_seq=1 ls=LS(id=Router.B area=0 ls_seq=1 peers={'Router.C': 1}))
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.C area=0 inst=1465308592 ls_seq=1 ls=LS(id=Router.C area=0 ls_seq=1 peers={'Router.B': 1L}))
+Tue Jun  7 14:09:59 2016 ROUTER_LS (trace) Computed next hops: {'Router.C': 'Router.C'}
+Tue Jun  7 14:09:59 2016 ROUTER_LS (trace) Computed costs: {'Router.C': 1}
+Tue Jun  7 14:09:59 2016 ROUTER_LS (trace) Computed valid origins: {'Router.C': []}
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) Local Link State: LS(id=Router.B area=0 ls_seq=2 peers={'Router.A': 1, 'Router.C': 1})
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) Computed next hops: {'Router.A': 'Router.A', 'Router.C': 'Router.C'}
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) Computed costs: {'Router.A': 1, 'Router.C': 1}
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) Computed valid origins: {'Router.A': ['Router.C'], 'Router.C': []}
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) SENT: LSR(id=Router.B area=0) to: Router.A
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) SENT: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.C area=0)
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) SENT: LSU(id=Router.B area=0 inst=1465308595 ls_seq=2 ls=LS(id=Router.B area=0 ls_seq=2 peers={'Router.A': 1, 'Router.C': 1}))
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.A area=0 inst=1465308600 ls_seq=0 ls=LS(id=Router.A area=0 ls_seq=0 peers={'Router.B': 1L}))
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.A area=0)
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) SENT: LSU(id=Router.B area=0 inst=1465308595 ls_seq=2 ls=LS(id=Router.B area=0 ls_seq=2 peers={'Router.A': 1, 'Router.C': 1}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.A area=0)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSU(id=Router.B area=0 inst=1465308595 ls_seq=2 ls=LS(id=Router.B area=0 ls_seq=2 peers={'Router.A': 1, 'Router.C': 1}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSR(id=Router.B area=0) to: Router.A
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.A area=0 inst=1465308600 ls_seq=1 ls=LS(id=Router.A area=0 ls_seq=1 peers={'Router.B': 1L}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Computed next hops: {'Router.A': 'Router.A', 'Router.C': 'Router.C'}
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Computed costs: {'Router.A': 1, 'Router.C': 1}
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Computed valid origins: {'Router.A': ['Router.C'], 'Router.C': ['Router.A']}
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:05 2016 ROUTER_LS (trace) SENT: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:06 2016 ROUTER_LS (trace) RCVD: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:06 2016 ROUTER_LS (trace) RCVD: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:09 2016 ROUTER_LS (trace) SENT: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:10 2016 ROUTER_LS (trace) RCVD: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:10 2016 ROUTER_LS (trace) RCVD: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:39 2016 ROUTER_LS (trace) SENT: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:40 2016 ROUTER_LS (trace) RCVD: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:40 2016 ROUTER_LS (trace) RCVD: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:46 2016 ROUTER_LS (info) Link to Neighbor Router Lost - link_tag=0
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) Local Link State: LS(id=Router.B area=0 ls_seq=3 peers={'Router.A': 1})
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) Computed next hops: {'Router.A': 'Router.A'}
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) Computed costs: {'Router.A': 1}
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) Computed valid origins: {'Router.A': []}
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) SENT: RA(id=Router.B area=0 inst=1465308595 ls_seq=3 mobile_seq=0)
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.A area=0)
+Tue Jun  7 14:10:46 2016 ROUTER_LS (trace) SENT: LSU(id=Router.B area=0 inst=1465308595 ls_seq=3 ls=LS(id=Router.B area=0 ls_seq=3 peers={'Router.A': 1}))
+
+Router.C
+
+Tue Jun  7 14:09:54 2016 ROUTER_LS (trace) SENT: RA(id=Router.C area=0 inst=1465308592 ls_seq=0 mobile_seq=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) Local Link State: LS(id=Router.C area=0 ls_seq=1 peers={'Router.B': 1})
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) Computed next hops: {'Router.B': 'Router.B'}
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) Computed costs: {'Router.B': 1}
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) Computed valid origins: {'Router.B': []}
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: LSR(id=Router.C area=0) to: Router.B
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.B area=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: LSU(id=Router.C area=0 inst=1465308592 ls_seq=1 ls=LS(id=Router.C area=0 ls_seq=1 peers={'Router.B': 1}))
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: LSR(id=Router.C area=0) to: Router.B
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.B area=0 inst=1465308595 ls_seq=1 ls=LS(id=Router.B area=0 ls_seq=1 peers={'Router.C': 1L}))
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.B area=0)
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) SENT: LSU(id=Router.C area=0 inst=1465308592 ls_seq=1 ls=LS(id=Router.C area=0 ls_seq=1 peers={'Router.B': 1}))
+Tue Jun  7 14:09:58 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.B area=0 inst=1465308595 ls_seq=1 ls=LS(id=Router.B area=0 ls_seq=1 peers={'Router.C': 1L}))
+Tue Jun  7 14:09:59 2016 ROUTER_LS (trace) Computed next hops: {'Router.B': 'Router.B'}
+Tue Jun  7 14:09:59 2016 ROUTER_LS (trace) Computed costs: {'Router.B': 1}
+Tue Jun  7 14:09:59 2016 ROUTER_LS (trace) Computed valid origins: {'Router.B': []}
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) SENT: LSR(id=Router.C area=0) to: Router.B
+Tue Jun  7 14:10:01 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.B area=0 inst=1465308595 ls_seq=2 ls=LS(id=Router.B area=0 ls_seq=2 peers={'Router.A': 1L, 'Router.C': 1L}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.A area=0)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSU(id=Router.C area=0 inst=1465308592 ls_seq=1 ls=LS(id=Router.C area=0 ls_seq=1 peers={'Router.B': 1}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSR(id=Router.C area=0) to: Router.A
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Computed next hops: {'Router.A': 'Router.B', 'Router.B': 'Router.B'}
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Computed costs: {'Router.A': 2L, 'Router.B': 1}
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) Computed valid origins: {'Router.A': [], 'Router.B': []}
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSR(id=Router.C area=0) to: Router.A
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: LSR(id=Router.A area=0)
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) SENT: LSU(id=Router.C area=0 inst=1465308592 ls_seq=1 ls=LS(id=Router.C area=0 ls_seq=1 peers={'Router.B': 1}))
+Tue Jun  7 14:10:02 2016 ROUTER_LS (trace) RCVD: LSU(id=Router.A area=0 inst=1465308600 ls_seq=1 ls=LS(id=Router.A area=0 ls_seq=1 peers={'Router.B': 1L}))
+Tue Jun  7 14:10:03 2016 ROUTER_LS (trace) Computed next hops: {'Router.A': 'Router.B', 'Router.B': 'Router.B'}
+Tue Jun  7 14:10:03 2016 ROUTER_LS (trace) Computed costs: {'Router.A': 2L, 'Router.B': 1}
+Tue Jun  7 14:10:03 2016 ROUTER_LS (trace) Computed valid origins: {'Router.A': [], 'Router.B': []}
+Tue Jun  7 14:10:05 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:06 2016 ROUTER_LS (trace) RCVD: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:06 2016 ROUTER_LS (trace) SENT: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:09 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:10 2016 ROUTER_LS (trace) RCVD: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:10 2016 ROUTER_LS (trace) SENT: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+Tue Jun  7 14:10:39 2016 ROUTER_LS (trace) RCVD: RA(id=Router.B area=0 inst=1465308595 ls_seq=2 mobile_seq=0)
+Tue Jun  7 14:10:40 2016 ROUTER_LS (trace) RCVD: RA(id=Router.A area=0 inst=1465308600 ls_seq=1 mobile_seq=1)
+Tue Jun  7 14:10:40 2016 ROUTER_LS (trace) SENT: RA(id=Router.C area=0 inst=1465308592 ls_seq=1 mobile_seq=0)
+

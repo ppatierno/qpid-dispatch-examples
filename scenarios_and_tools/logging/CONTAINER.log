@@ -1,0 +1,18 @@
+Router.A
+
+Tue Jun  7 14:46:18 2016 CONTAINER (trace) Container Initialized
+Tue Jun  7 14:46:18 2016 CONTAINER (trace) Node Type Registered - router
+Tue Jun  7 14:46:18 2016 CONTAINER (trace) Node of type 'router' installed as default node
+
+Router.B
+
+Tue Jun  7 14:46:16 2016 CONTAINER (trace) Container Initialized
+Tue Jun  7 14:46:16 2016 CONTAINER (trace) Node Type Registered - router
+Tue Jun  7 14:46:16 2016 CONTAINER (trace) Node of type 'router' installed as default node
+
+Router.C
+
+Tue Jun  7 14:46:14 2016 CONTAINER (trace) Container Initialized
+Tue Jun  7 14:46:14 2016 CONTAINER (trace) Node Type Registered - router
+Tue Jun  7 14:46:14 2016 CONTAINER (trace) Node of type 'router' installed as default node
+
