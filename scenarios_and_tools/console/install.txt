@@ -1,0 +1,17 @@
+Installation using Nginx as web server
+
+1. Install Ngnix :
+	dnf install nginx
+
+2. Install following :
+	dnf install python-websockify
+
+3. Change "root" attribute in the Nginx configuration file at /etc/nginx/nginx.conf with the path to "stand-alone" files of console :
+	i.e. /qpid-dispatch/console/stand-alone
+
+4. Provide a listener to the router with "normal" role on a specific port (i.e. standard AMQP 5672)
+
+5. Start the websockify in order to proxy calls from 5673 (websocket) to 5672 (tcp)
+	websockify localhost:5673 localhost:5672
+
+6. The console is available on http://localhost:80/
