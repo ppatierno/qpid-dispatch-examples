@@ -1,0 +1,20 @@
+[root@localhost /]# qdmanage -b localhost:5673 update name=log/ROUTER enable=trace+
+{
+  "enable": "trace+", 
+  "type": "org.apache.qpid.dispatch.log", 
+  "identity": "log/ROUTER", 
+  "module": "ROUTER", 
+  "name": "log/ROUTER"
+}
+
+[root@localhost /]# qdmanage -b localhost:5673 update --stdin
+{ "enable": "debug", "name": "log/ROUTER", "timestamp": "yes" }
+{
+  "enable": "debug", 
+  "name": "log/ROUTER", 
+  "timestamp": true, 
+  "module": "ROUTER", 
+  "type": "org.apache.qpid.dispatch.log", 
+  "identity": "log/ROUTER"
+}
+

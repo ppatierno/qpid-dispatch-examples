@@ -1,0 +1,4 @@
+qdmanage -b localhost:5673 delete --name my_address_name
+
+qdmanage -b localhost:5673 delete --name my_address_name_not_exists
+NotFoundStatus: No entity with name='my_address_name_not_exists'

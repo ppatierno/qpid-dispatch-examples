@@ -1,0 +1,16 @@
+[root@localhost /]# qdmanage -b localhost:5673 read --name BROKER
+{
+  "verifyHostName": true,
+  "stripAnnotations": "both",
+  "name": "BROKER",
+  "allowRedirect": true,
+  "idleTimeoutSeconds": 16,
+  "maxFrameSize": 65536,
+  "host": "127.0.0.1",
+  "cost": 1,
+  "role": "route-container",
+  "type": "org.apache.qpid.dispatch.connector",
+  "port": "5672",
+  "identity": "connector/127.0.0.1:5672:BROKER",
+  "addr": "127.0.0.1"
+}
