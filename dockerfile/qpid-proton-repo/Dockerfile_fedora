@@ -1,0 +1,33 @@
+FROM fedora:23
+
+MAINTAINER Paolo Patierno <ppatierno@live.com>
+
+# required dependencies
+RUN dnf -y install gcc gcc-c++ make cmake libuuid-devel
+
+# dependencies needed for ssl support
+RUN dnf -y install openssl-devel
+
+# dependencies needed for Cyrus SASL support
+RUN dnf -y install cyrus-sasl-devel cyrus-sasl-plain
+
+# dependencies needed for Python binding
+RUN dnf -y install swig python-devel
+
+# set Qpid Proton library version
+ENV PROTON_VERSION 0.13.0
+
+# install git
+RUN dnf -y install git
+
+# cloning Qpid Proton library
+RUN git clone https://github.com/apache/qpid-proton.git
+
+# build Qpid Proton library
+RUN mkdir /qpid-proton/build
+WORKDIR /qpid-proton/build
+
+RUN cmake .. -DSYSINSTALL_BINDINGS=ON -DCMAKE_INSTALL_PREFIX=/usr && make install
+
+WORKDIR /
+CMD ["bash"]
