@@ -32,14 +32,14 @@ class Recv(MessagingHandler):
 
     def on_start(self, event):
         #event.container.create_receiver(self.url)
-	receiverB = event.container.create_receiver("localhost:6001/examples")
-	receiverC = event.container.create_receiver("localhost:6002/examples")
+	receiverB = event.container.create_receiver("localhost:6001/my_address")
+	receiverC = event.container.create_receiver("localhost:6002/my_address")
 
     def on_message(self, event):
         print(event.receiver.connection.remote_container)
-        if event.message.id and event.message.id < self.received:
+        #if event.message.id and event.message.id < self.received:
             # ignore duplicate message
-            return
+            #return
         if self.expected == 0 or self.received < self.expected:
             print(event.message.body)
             self.received += 1
