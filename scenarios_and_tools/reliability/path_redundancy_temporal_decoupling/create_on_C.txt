@@ -1,0 +1,7 @@
+[root@localhost /]# qdmanage -b localhost:6002 create --stdin
+[ 
+{ "type":"connector", "name":"BROKER", "port":5672, "role":"route-container" },
+{ "type":"address", "prefix":"my_queue", "waypoint":"yes" },
+{ "type":"autoLink", "addr":"my_queue", "connection":"BROKER", "dir":"in" },
+{ "type":"autoLink", "addr":"my_queue", "connection":"BROKER", "dir":"out" }
+]
