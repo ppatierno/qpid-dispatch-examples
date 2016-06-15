@@ -1,0 +1,13 @@
+[root@localhost logging]# qdrouterd --conf xxx
+Wed Jun 15 09:53:28 2016 ERROR (error) Python: Exception: Cannot load configuration file xxx: [Errno 2] No such file or directory: 'xxx'
+Wed Jun 15 09:53:28 2016 ERROR (error) Traceback (most recent call last):
+  File "/usr/lib/qpid-dispatch/python/qpid_dispatch_internal/management/config.py", line 155, in configure_dispatch
+    config = Config(filename)
+  File "/usr/lib/qpid-dispatch/python/qpid_dispatch_internal/management/config.py", line 41, in __init__
+    self.load(filename, raw_json)
+  File "/usr/lib/qpid-dispatch/python/qpid_dispatch_internal/management/config.py", line 123, in load
+    with open(source) as f:
+Exception: Cannot load configuration file xxx: [Errno 2] No such file or directory: 'xxx'
+
+Wed Jun 15 09:53:28 2016 MAIN (critical) Router start-up failed: Python: Exception: Cannot load configuration file xxx: [Errno 2] No such file or directory: 'xxx'
+qdrouterd: Python: Exception: Cannot load configuration file xxx: [Errno 2] No such file or directory: 'xxx'
