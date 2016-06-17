@@ -15,3 +15,9 @@ Installation using Nginx as web server
 	websockify localhost:5673 localhost:5672
 
 6. The console is available on http://localhost:80/
+
+Docker
+
+The fastest way to use the console is to run the docker image. Follow the installation/run instruction on that page.
+
+https://hub.docker.com/r/ernieallen/dispatch-console/
