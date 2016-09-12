@@ -1,0 +1,18 @@
+FROM ppatierno/qpid-proton:0.14.0-repo
+
+MAINTAINER Paolo Patierno <ppatierno@live.com>
+
+# required dependencies (other than provided by starting image qpid-proton)
+RUN dnf -y install boost-devel ruby ruby-devel
+
+# cloning Qpid C++ library
+RUN git clone https://github.com/apache/qpid-cpp.git
+
+# build Qpid C++ library
+RUN mkdir /qpid-cpp/build
+WORKDIR /qpid-cpp/build
+
+RUN cmake .. && make install
+
+WORKDIR /
+CMD ["bash"]
