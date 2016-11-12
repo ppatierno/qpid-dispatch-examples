@@ -1,4 +1,4 @@
-FROM ppatierno/qpid-proton:0.14.0
+FROM ppatierno/qpid-proton:0.15.0
 
 MAINTAINER Paolo Patierno <ppatierno@live.com>
 
