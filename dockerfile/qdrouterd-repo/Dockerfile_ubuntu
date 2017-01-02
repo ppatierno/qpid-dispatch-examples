@@ -1,9 +1,9 @@
-FROM ppatierno/qpid-proton-ubuntu:0.15.0
+FROM ppatierno/qpid-proton-ubuntu:0.16.0
 
 MAINTAINER Paolo Patierno <ppatierno@live.com>
 
 # set Qpid Dispatch Router version
-ENV DISPATCH_VERSION 0.6.1
+ENV DISPATCH_VERSION 0.8.0
 
 # install git
 RUN apt-get install -y git

@@ -15,7 +15,7 @@ RUN dnf -y install cyrus-sasl-devel cyrus-sasl-plain
 RUN dnf -y install swig python-devel
 
 # set Qpid Proton library version
-ENV PROTON_VERSION 0.15.0
+ENV PROTON_VERSION 0.16.0
 
 # downloading/extracting Qpid Proton library
 RUN dnf -y install wget
